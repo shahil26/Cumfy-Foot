@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #002347;
+}
+
+header {
+	background-color: #002347;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a.active {
+	font-weight: bold;
+}
+
+main {
+	margin: 20px;
+}
+
+.banner {
+	background-image: url("https://thumbs.dreamstime.com/b/legs-shoes-sneakers-girl-wearing-fitness-boots-sock-flat-teenager-casual-footwear-colored-stylish-socks-legs-shoes-255733402.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner h1 {
+	font-size: 48px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #333;
+}
+
+.about-us {
+	margin-top: 50px;
+}
+
+.about-us h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.about-us p {
+	margin-bottom: 20px;
+}
+
+footer {
+	background-color: #002347;
+	color: #fff;
+	padding: 10px;
+	text-align:center;
+}
+
+footer p {
+margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+header {
+padding: 10px 20px;
+}nav ul {
+	flex-direction: column;
+}
+
+nav li {
+	margin: 10px 0;
+}
+
+.banner h1 {
+	font-size: 36px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+.banner h1 {
+font-size: 24px;
+}
+}
+
+
+
+
+

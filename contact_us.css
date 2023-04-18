@@ -1,0 +1,148 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #002347;
+}
+
+header {
+	background-color: #002347;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a.active {
+	font-weight: bold;
+}
+
+main {
+	margin: 20px;
+}
+
+.banner {
+	background-image: url("https://media.istockphoto.com/id/1137770739/vector/contact-us-icon-special-blue-banner-background.jpg?s=612x612&w=0&k=20&c=BGObTq94k_hJiZPbZNJbTN6hdXPk3XVmJphicAN2YVE=");
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner h1 {
+	font-size: 48px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #002347;
+}
+
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.contact-info, .contact-form {
+flex-basis: 45%;
+}
+
+.contact-info h2, .contact-form h2 {
+margin-top: 0;
+}
+
+.contact-info p, .contact-info a {
+display: block;
+margin: 10px 0;
+}
+
+.contact-form label {
+display: block;
+margin: 10px 0;
+}
+
+.contact-form input, .contact-form textarea {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 100%;
+box-sizing: border-box;
+}
+
+.contact-form button {
+background-color: #002347;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.contact-form button:hover {
+background-color: #002347;
+}
+
+footer {
+background-color: #002347;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+header {
+padding: 10px 20px;
+}
+
+
+nav ul {
+	flex-direction: column;
+}
+
+nav li {
+	margin: 10px 0;
+}
+
+.banner h1 {
+	font-size: 36px;
+}
+
+.contact {
+	flex-direction: column;
+}
+
+.contact-info, .contact-form {
+	flex-basis: 100%;
+	margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+.banner h1 {
+font-size: 24px;
+}
+}

@@ -1,0 +1,114 @@
+
+
+
+/* Styles for screens smaller than 80% */
+@media (max-width: 80%) {
+    .some-element {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  /* default styles for all screen sizes */
+
+  
+
+#Maindiv{
+    background-color: rgb(160, 199, 199);
+    display:flex;
+}
+#Form{
+    width: 300px;
+    float: right;
+    margin-right: 250px;
+    margin-top: 70px;
+}
+#Fieldset{
+    width: 450px;
+    height: 370px;
+    border: 2px solid #dcdcdc;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(176, 110, 176);
+}
+#Data2{
+    padding: 50px;
+    text-align: center;
+
+}
+.all_label{
+    margin-bottom:15px;
+    padding: 0px 5px 5px 5px;
+    border: 1px solid rgb(255, 134, 59);
+    border-radius: 10px;
+    height: 30px;
+}
+.all_label:hover,.all_label:focus{
+    border: 2px solid black;
+    background-color: #efefef;
+}
+#Otpdiv{
+    margin-bottom:15px;
+}
+.left{
+    /* position: relative; */
+    /* right:250px;
+    top:130px;
+    height:200px;
+    width:200px; */
+    float: left;
+    display: inline;
+    width:40%;
+
+}
+.left img{
+    width: 100%;
+    margin-left: 0px;
+}
+.right{
+    width:60%;
+}
+#Legend{
+	background-color: #efefef;
+	border: 1px solid #dcdcdc;
+	border-radius: 10px;
+    width: 200px;
+}
+footer{
+    text-align: center;
+    font-size: 60%;
+    background-color: #002347;
+    color: white;
+}
+#Fieldset a{
+    text-decoration: none;
+    color: white;
+}
+#Fieldset a:hover{
+    text-decoration: none;
+    font-size: 110%;
+    padding: 3px;
+    color: rgb(255, 77, 0);
+}
+#Otpdiv{
+    height: 10px;
+}
+#Submit{
+    margin-top: 15px;
+}
+#Submit:hover,#Submit:focus{
+    background-color: #002347;
+    color: white;
+}
+p{
+    text-align: center;
+}
+button{
+    margin-top: 370px;
+    float: right;
+    width: 450px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#changeable2{
+    display: none;
+}

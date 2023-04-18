@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="addtocart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cedarville+Cursive&family=Merriweather:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="title">Cumfy Foot</li>
+          <li class="left"><a href="index.html">Home</a></li>
+          <li class="left"><a href="mens.html">Men</a></li>
+          <li class="left"><a href="women.html">Women</a></li>
+          <li class="left"><a href="contact_us.html">Contact</a></li>
+          <li class="left"><a href="about_us.html">About</a></li>
+          <li class="right">
+            <a href="#" id="retainable">Profile</a>
+            <!-- <p>Hey</p> -->
+            <ul class="drop" id="Drop" style="background-color: #002347;">
+              <li>
+                <p id="hey" style="color: #fff;margin-right:1.3rem;">Hey </p>
+              </li>
+              <li class="b">
+                <a href="login_page.html" id="loggin" style="color: #fff;">Login/Signup</a>
+              </li>
+              <li class="b"><a style="color: #fff;">Orders</a></li>
+            </ul>
+          </li>
+          <li>
+            <svg
+              class="V3C5bO"
+              width="14"
+              height="14"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="_1bS9ic"
+                d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+                fill="#fff"
+              ></path>
+            </svg>
+            <span><a id="Cart" onclick="Cart()" style="cursor: pointer">Cart</a></span>
+          </li>
+          <li id="search">
+            <input
+              type="text"
+              name="search"
+              id="searchbar"
+              placeholder="Search for products"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="s-img"
+              src="https://www.nativeshoes.com/on/demandware.static/-/Library-Sites-nas-global/default/dw860ae9b4/images/home/NS_SS23_Disney_Website_Homepage-Banner_Disney-x-Native-Shoes_Desktop_v1.jpg"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="s-img"
+              src="https://aplfootwear.com/wp-content/uploads/2021/12/shoe-website-banner-1.jpg"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="s-img"
+              src="https://dxkvlfvncvqr8.cloudfront.net/media/images/cms-banner/image_path/bahamas-website-banner-1672403702.jpg"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="s-img"
+              src="https://dxkvlfvncvqr8.cloudfront.net/media/images/cms-banner/image_path/urban-basic-web-banner-1672736289.jpg"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="s-img"
+              src="https://etimg.etb2bimg.com/photo/64733827.cms"
+            />
+          </div>
+
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="shopbycategory">Shop By Category</div>
+
+    <div class="category">
+      <div class="featured" style="margin: auto">
+        <img
+          class="mens"
+          src="men_shoe.jpg"
+          style="border: 1px solid #000000; border-radius: 10px; margin: auto"
+          alt=""
+        />
+        <a
+          href="#"
+          class="featured-img"
+          style="background-image: url(men_shoe.jpg)"
+        ></a>
+        <div class="desc">
+          <h2><a href="mens.html" style="font-size: 1.5rem;">Shop Men's Collection</a></h2>
+        </div>
+      </div>
+      <div class="featured2" style="margin: auto">
+        <img
+          class="mens"
+          src="women.webp"
+          style="border: 1px solid #000000; border-radius: 10px; margin: auto"
+          alt=""
+        />
+        <a
+          href="#"
+          class="featured-img"
+          style="background-image: url(mens.png)"
+        ></a>
+        <div class="desc">
+          <h2><a href="women.html" style="font-size: 1.5rem;">Shop Women's Collection</a></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="best_seller">
+        <h2>Best Sellers</h2>
+      </div>
+    </div>
+
+    
+
+    <main>
+      <section class="product-list">
+       
+        <ul>
+          <li>
+            <img style="height:288px"; src="https://rukminim1.flixcart.com/image/612/612/xif0q/slipper-flip-flop/f/i/l/-original-imagg5qybcjdbrua.jpeg?q=70" alt="Sneakers 1">
+            <h3>Crocs</h3>
+            <h2 id="product-1">Crocband Printed Flip Flops</h2>
+            <p><span id="cost-1">₹1900</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-1">
+                <option>Size</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-1">
+                <option>Color</option>
+                <option>Red</option>
+                <option>Black</option>
+                <option>Navy Blue</option>
+                <option>White</option>
+              </select>
+            </p>
+            <button onclick="changePage('https://rukminim1.flixcart.com/image/612/612/xif0q/slipper-flip-flop/f/i/l/-original-imagg5qybcjdbrua.jpeg?q=70','product-1','cost-1','size-1','color-1')">Add to Cart</button>
+          </li>
+          <li>
+            <img style="height:288px"; src="https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/9/z/q/-original-imagk4kdhyeherdf.jpeg?q=70" alt="Sneakers 2">
+            <h3>Nike</h3>
+            <h2 id="product-2">Sneakers For Men  (Green)</h2>
+            <p><span id="cost-2">₹3096</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-2">
+                <option>Size</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-2">
+                <option>Color</option>
+                <option>Red</option>
+                <option>Black</option>
+                <option>Navy Blue</option>
+                <option>White</option>
+              </select>
+            <button onclick="changePage('https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/9/z/q/-original-imagk4kdhyeherdf.jpeg?q=70','product-2','cost-2','size-2','color-2')">Add to Cart</button>
+          </li>
+          <li>
+            <img style="height:288px"; src="https://rukminim1.flixcart.com/image/832/832/xif0q/shoe/7/g/i/4-dh9523-602nike-6-5-nike-light-soft-pink-arctic-orange-original-imagnzbfhjwbjp8g.jpeg?q=70" alt="Sneakers 3">
+            <h3>Nike</h3>
+            <h2 id="product-3"> Running Shoes For Women  (Beige)</h2>
+            <p><span id="cost-3">₹3129</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-3">
+                <option>Size</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-3">
+                <option>Color</option>
+                <option>Red</option>
+                <option>Black</option>
+                <option>Navy Blue</option>
+                <option>White</option>
+              </select>
+            </p>
+            <button onclick="changePage('https://rukminim1.flixcart.com/image/832/832/xif0q/shoe/7/g/i/4-dh9523-602nike-6-5-nike-light-soft-pink-arctic-orange-original-imagnzbfhjwbjp8g.jpeg?q=70','product-3','cost-3','size-3','color-3')"> Add to Cart </button>
+          </li>
+          <li>
+            <img style="height:288px" src="https://rukminim1.flixcart.com/image/832/832/l48s9zk0/shoe/d/m/n/4-rlo095-red-tape-blush-original-imagf6f4rhqfqhyp.jpeg?q=70" alt="Boots 3">
+            <h3>Red Tape</h3>
+            <h2 id="product-4">Walking Shoes For Women  (Pink)</h2>
+            <p><span id="cost-4">₹919</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-4">
+                <option>Size</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-4">
+                <option>Color</option>
+                <option>Red</option>
+                <option>Black</option>
+                <option>Navy Blue</option>
+                <option>White</option>
+              </select>
+            </p>
+            <button onclick="changePage('https://rukminim1.flixcart.com/image/832/832/l48s9zk0/shoe/d/m/n/4-rlo095-red-tape-blush-original-imagf6f4rhqfqhyp.jpeg?q=70','product-4','cost-4','size-4','color-4')">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+      <section class="product-list">
+        
+        <ul>
+          <li>
+            <img src="https://m.media-amazon.com/images/I/518Aj7zNVmL._AC_UL400_.jpg" alt="Boots 1">
+            <h3>Campus</h3>
+            <h2 id="product-5"> Women's Sd-062 Outdoor Sandals </h2>
+            <p><span id="cost-5">₹400</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-5">
+                  <option>Size</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-5">
+                  <option>Color</option>
+                  <option>Red</option>
+                  <option>Black</option>
+                  <option>Navy Blue</option>
+                  <option>White</option>
+                </select>
+            </p>
+            <button onClick="changePage('https://m.media-amazon.com/images/I/518Aj7zNVmL._AC_UL400_.jpg','product-5','cost-5','size-5','color-5')">Add to Cart</button></button>
+          </li>
+          <li>
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/q/q/m/-original-imagn9zfdss49cyf.jpeg?q=70" alt="Boots 2">
+            <h3>Adidas</h3>
+            <h2 id="product-6"> Running Shoes For Women  (Black)</h2>
+            <p></p>
+            <p><span id="cost-6">₹1479</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-6">
+                  <option>Size</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-6">
+                  <option>Color</option>
+                  <option>Red</option>
+                  <option>Black</option>
+                  <option>Navy Blue</option>
+                  <option>White</option>
+                </select></p>
+            <button onClick="changePage('https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/q/q/m/-original-imagn9zfdss49cyf.jpeg?q=70','product-6','cost-6','size-6','color-6')">Add to Cart</button>
+          </li>
+          <li>
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/l/r/v/10-369573-10-puma-parisian-night-high-risk-red-white-original-imaghbgnufgqtrgt.jpeg?q=70" alt="Boots 3">
+            <h3>Puma</h3>
+            <h2 id="product-7">Rebound LayUp SL Sneakers For Men </h2>
+            <p><span id="cost-7">₹3599</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-7">
+                  <option>Size</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-7">
+                  <option>Color</option>
+                  <option>Red</option>
+                  <option>Black</option>
+                  <option>Navy Blue</option>
+                  <option>White</option>
+                </select></p>
+            <button  onClick="changePage('https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/l/r/v/10-369573-10-puma-parisian-night-high-risk-red-white-original-imaghbgnufgqtrgt.jpeg?q=70','product-7','cost-7','size-7','color-7')">Add to Cart</button>
+          </li>
+          <li>
+            <img src="https://rukminim1.flixcart.com/image/612/612/kfcv6vk0-0/slipper-flip-flop/x/r/t/5-205393-crocs-white-navy-original-imafvuy3azdyxhbt.jpeg?q=70" alt="Boots 3">
+            <h3>Crocs</h3>
+            <h2 id="product-8">Bayaband Flip Flops</h2>
+            <h2 id="product-8">Black</h2>
+            <p><span id="cost-8">₹1537</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-8">
+                  <option>Size</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-8">
+                  <option>Color</option>
+                  <option>Red</option>
+                  <option>Black</option>
+                  <option>Navy Blue</option>
+                  <option>White</option>
+                </select></p>
+            <button  onClick="changePage('https://rukminim1.flixcart.com/image/612/612/kfcv6vk0-0/slipper-flip-flop/x/r/t/5-205393-crocs-white-navy-original-imafvuy3azdyxhbt.jpeg?q=70','product-8','cost-8','size-8','color-8')">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+      <section class="product-list">
+       
+        <ul style="margin-right: 0px;">
+          <li style="height:288px">
+            <img  src="https://m.media-amazon.com/images/I/71feqjaT5+L._AC_UL400_.jpg" alt="Sandals 1">
+            <h3>Red Tape</h3>
+            <h2 id="product-9">Men's Slippers </h2>
+            <p><span id="cost-9">₹700</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-9">
+                  <option>Size</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-9">
+                  <option>Color</option>
+                  <option>Red</option>
+                  <option>Black</option>
+                  <option>Navy Blue</option>
+                  <option>White</option>
+                </select></p>
+            <button  onClick="changePage('https://m.media-amazon.com/images/I/71feqjaT5+L._AC_UL400_.jpg','product-9','cost-9','size-9','color-9')">Add to Cart</button>
+          </li>
+          <li style="height:288px">
+            <img  src="https://m.media-amazon.com/images/I/71Z9XdlDzjL._AC_UL400_.jpg" alt="Sandals 1">
+            <h3>Flite</h3>
+            <h2 id="product-10">Men's Flip Flops Thong </h2>
+            <p><span id="cost-10">₹300</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-10">
+                  <option>Size</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-10">
+                  <option>Color</option>
+                  <option>Red</option>
+                  <option>Black</option>
+                  <option>Navy Blue</option>
+                  <option>White</option>
+                </select></p>
+            <button  onClick="changePage('https://m.media-amazon.com/images/I/71Z9XdlDzjL._AC_UL400_.jpg','product-10','cost-10','size-10','color-10')">Add to Cart</button>
+          </li>
+          <li style="height:288px">
+            <img  src="https://m.media-amazon.com/images/I/71-JrD05RaL._AC_UL400_.jpg" alt="Sandals 1">
+            <h3>Sparx</h3>
+            <h2 id="product-11">mens Sfg-83 Slipper </h2>
+            <p><span id="cost-11">₹310</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-11">
+                  <option>Size</option>
+                  <option>7</option>
+                  <option>8</option>       
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-11">
+                  <option>Color</option>
+                  <option>Red</option>
+                  <option>Black</option>
+                  <option>Navy Blue</option>
+                  <option>White</option>
+                </select></p>
+            <button  onClick="changePage('https://m.media-amazon.com/images/I/71-JrD05RaL._AC_UL400_.jp10','product-11','cost-11','size-11','color-11')">Add to Cart</button>
+          </li>
+          <li style="height:288px">
+            <img src="https://m.media-amazon.com/images/I/71zd1bCzY7L._AC_UL400_.jpg" alt="Sandals 1">
+            <h3>Flite</h3>
+            <h2 id="product-12">Men's Flip Flop </h2>
+            <p><span id="cost-12">₹150</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-12">
+                  <option>Size</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-12">
+                  <option>Color</option>
+                  <option>Red</option>
+                  <option>Black</option>
+                  <option>Navy Blue</option>
+                  <option>White</option>
+                </select></p>
+            <button  onClick="changePage('https://m.media-amazon.com/images/I/71zd1bCzY7L._AC_UL400_.jpg','product-12','cost-12','size-12','color-12')">Add to Cart</button>
+          </li>
+      </section>
+     
+      <section class="product-list">
+        
+        <ul>
+          <li >
+            <img style="height:288px"; src="https://rukminim1.flixcart.com/image/832/832/xif0q/slipper-flip-flop/a/h/z/-original-imagn9kggpkxmhfv.jpeg?q=70" alt="Sandals 1">
+            <h3>Puma</h3>
+            <h2>Slippers  (White 10) </h2>
+            <p>₹1300</p>
+            <button>Add to Cart</button>
+          </li>
+          <li>
+            <img style="height:288px"; src="https://m.media-amazon.com/images/I/51VSQ3tMwXL._AC_UL400_.jpg" alt="Sandals 2">
+            <h3>Campus</h3>
+            <h2>mens Gc-2308 Sandal</h2>
+            <p>₹849</p>
+            <button>Add to Cart</button>
+          </li>
+          <li>
+            <img style="height:288px"; src="https://rukminim1.flixcart.com/image/832/832/xif0q/sandal/v/f/0/3-6715867-3-bata-maroon-original-imaghybcewvdaf7b.jpeg?q=70" alt="Sandals 3">
+            <h3>Bata</h3>
+            <h2 id="product-15">Women  Sandal</h2>
+            <p><span id="cost-15">₹1069</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-15">
+                  <option>Size</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-15">
+                  <option>Color</option>
+                  <option>Red</option>
+                  <option>Black</option>
+                  <option>Navy Blue</option>
+                  <option>White</option>
+                </select></p>
+                <button  onClick="changePage('https://rukminim1.flixcart.com/image/832/832/xif0q/sandal/v/f/0/3-6715867-3-bata-maroon-original-imaghybcewvdaf7b.jpeg?q=70','product-15','cost-15','size-15','color-15')">Add to Cart</button>
+                </li>
+                <li>
+                  <img style="height:288px"; src="https://m.media-amazon.com/images/I/81lA6T7m1JL._AC_UL400_.jpg" alt="Boots 3">
+                  <h3>Sparx</h3>
+                  <h2 id="product-16">Men's Ss-573 Sport</h2>
+                  <p><span id="cost-16">₹934</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <select style="border: none;outline: none;color: #002347;font-size: larger;" id="size-16">
+                        <option>Size</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <select style="border: none;outline: none;color: #002347;font-size: larger;" id="color-16">
+                        <option>Color</option>
+                        <option>Red</option>
+                        <option>Black</option>
+                        <option>Navy Blue</option>
+                        <option>White</option>
+                      </select></p>
+                  <button  onClick="changePage('https://m.media-amazon.com/images/I/81lA6T7m1JL._AC_UL400_.jpg','product-16','cost-16','size-16','color-16')">Add to Cart</button>
+                </li>
+      
+              </ul>
+      </section>
+    
+      </main>
+
+    <div style="margin-top: 0px";class="colorlib-partner">
+      <div class="brand">
+        <div class="row">
+          <div class="trust">
+            <h2 class="part">Trusted Partners</h2>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col">
+            <img
+              src="https://www.mgtechnologies.co.in/_demo/mg-footwear-ecommerce-website-template/images/brand-1.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://www.mgtechnologies.co.in/_demo/mg-footwear-ecommerce-website-template/images/brand-2.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col" id="relax">
+            <img
+              src="https://assetscdn1.paytm.com/images/catalog/brand/1625032913598.png"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAAbFBMVEX///8AAACWlpbAwMB3d3fq6urd3d3S0tI8PDz29vYqKiq6urqJiYnt7e03NzckJCSurq4uLi4NDQ3KysqDg4NNTU2QkJB9fX1YWFgTExMaGhosLCwyMjK1tbWlpaVISEhhYWFtbW3i4uJnZ2fVprcVAAACSElEQVR4nO3aYV+iMACAcUhAwcRA7bz06vK+/3cMtkVUwjZl2/3y+b9zgownEwSjCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+S2eNVX9k3gxsQk0noDwWeiPPYmAbbEbBzGWK7GMkEQNluCmFMpRiEW5KoZCiQ4oPx3bHX3oDt5siStP007H0hlN8RYoOKTqk6JCic7Nnm9/JFPE89DzOyY+xMXWq9CAepCavvmuX/NsbSPRb2YkFHw3mU+aTplial4gTucpaPHg0eHF1tnmySiHeMrnRhGbBUrzKVQrx4N48xbcT73Eb4xRLUpDiP0px7ydFFjZFdaf3HE2WYj+yGXHl8z3F9vwylcMURodG5foUtXZNlWLoMHVymMLmCH19Cv2Jt0rxMP40KdymyPRLdjym+DXwdOYwRfyaaG3VW8djinh3fiqxyxQm7uQqPlOMC5dCfQchRfefS4ofn2JmkULd9f2pKaJ9XNf179aTtJaKxuFQVdWxVTZ26o6GzxRPi7JsNl9Vh2Y6Yl5ijs1s6zreX7bHE/KYIrl8ll54TPHn8ll6QYpO0f8MHeXsO4gjX+/waskUtcEF/KtTLLJVOshq0gZWYpNWn8WFyXFOXMJ3fDC1+wtqLe1f1SiFuOLvOMXEnyTOUrT7T4rbSbG+OoX+9nGIFPKCaWGzyj+jFL0d6q0rf8I6dHGq58Ww9pRO7W+P7e7DbmZ68m12+Q+bc/0mpi4BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwI83O/UgQPH1D8oAAAAASUVORK5CYII="
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://www.mgtechnologies.co.in/_demo/mg-footwear-ecommerce-website-template/images/brand-5.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://cdn.shortpixel.ai/spai/q_lossy+w_924+to_webp+ret_img/https://brandyuva.in/wp-content/uploads/2017/09/action-shoe-logo.png"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://i.pinimg.com/originals/0e/7d/19/0e7d19a04dd482e56a436e69854943e2.jpg"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--footer-->
+    <footer class="padding_4x">
+      <div class="flex">
+        <section class="flex-content padding_1x">
+          <h3>About</h3>
+          <a href="contact_us.html">Contact Us</a>
+          <a href="about_us.html">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">CumfyFoot wholesale</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Help</h3>
+          <a href="#">Payment</a>
+          <a href="#">Shipping</a>
+          <a href="return.html">Cancellation/Returns</a>
+          <a href="FAQ.html">FAQ</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Consumer Policy</h3>
+          <a href="return_policy.html">Return Policy</a>
+          <a href="terms_of_use.html">Terms Of Use</a>
+          <a href="#">Security</a>
+          <a href="privacy_policy.html">Privacy</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Resources</h3>
+          <a href="#">Guides</a>
+          <a href="#">Research</a>
+          <a href="#">Experts</a>
+          <a href="#">Agencies</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Newsletter</h3>
+          <p>You can trust us. we only send promo offers,</p>
+          <fieldset class="fixed_flex">
+            <input
+              type="email"
+              name="newsletter"
+              placeholder="Your Email Address"
+            />
+            <button class="btn btn_2">Subscribe</button>
+          </fieldset>
+        </section>
+      </div>
+      <div class="flex">
+        <section class="flex-content padding_1x">
+          <p>Copyright ©2023 All rights reserved || Cumfy Foot</p>
+        </section>
+        <section class="flex-content padding_1x">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </section>
+      </div>
+    </footer>
+
+    <!-- End of .container -->
+
+<div id="hide" style="display: none;overflow: auto;height: 500px;width: 80%;margin: auto;"><center>
+  <div style="background-color: #002347;border: 1px solid whitesmoke;border-radius: 0.7rem;width: 70%; height: 3rem;margin-top: 30px;">
+  <h3 style="border-radius: 1px solid black;color: white;margin-top: 10px;"><b>CART</b></h3>
+  </div>
+  <table style="border-top: 1px solid rgb(71, 71, 71);border-bottom: 1px solid rgb(71, 71, 71);width: 80%;text-align: center;margin-top: 30px;" id="cart-table">
+    <tr style="border-top: 1px solid rgb(129, 127, 127);border-bottom: 1px solid rgb(129, 127, 127);">
+      <th>
+        Product
+      </th>
+      <th>
+        Quantity
+      </th>
+      <th>
+        Sub Total
+      </th>
+      <th>
+        <button id="clear-cart">Clear Cart</button>
+      </th>
+    </tr>
+    
+  </table>
+</center>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+        },
+
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="index.js"></script>
+   
+    <script type="text/javascript">
+      function getCookie(cookieName) {
+          let cookie = {};
+          document.cookie.split(';').forEach(function(el) {
+            let [key,value] = el.split('=');
+            cookie[key.trim()] = value;
+          })
+          return cookie[cookieName];
+      }
+  
+      function logout() 
+      {
+        if(document.cookie. indexOf('Name=') != -1)
+        {
+          document.cookie = "Name="+getCookie('Name')+"; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  
+          document.cookie = "Email="+getCookie('Email')+"; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+          document.getElementById("hey").innerHTML = "Hey";
+          document.getElementById("loggin").innerHTML = "Login/Signup"
+        }
+      }
+      if(document.cookie. indexOf('Name=') != -1)
+      {
+        // document.getElementById("username").innerHTML = getCookie('username');
+        // document.getElementById("Email").innerHTML = "Email: "+getCookie('Email');
+        document.getElementById("loggin").innerHTML = "LogOut";
+
+        
+        document.getElementById("loggin").href = "javascript:logout()";
+      }
+        // document.getElementById("loggin").onclick = logout();
+        // document.getElementById("loggin").href = "<script type="text/javascript" src="logout.js">
+    </script>
+  </body>
+  
+</html>

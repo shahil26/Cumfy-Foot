@@ -1,0 +1,40 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2, h3 {
+    margin: 20px 0 10px 0;
+    font-weight: normal;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  p {
+    margin: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #002347;
+    color: #fff;
+    padding: 20px;
+  }
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #002347;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  

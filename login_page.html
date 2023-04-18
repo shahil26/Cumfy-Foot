@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta http-equiv="refresh" content="5"> -->
+	<title>
+		LOGIN | SIGN UP -- THE BOOT
+	</title>
+	<link rel="stylesheet" type="text/css" href="login_page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="some-element">
+    <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Cumfy Foot</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>   
+      </button>  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>    
+            <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">Contact</a>
+            </li>    
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="">Become a seller</a>
+            </li>     -->
+        </ul>    
+     </div>   
+    </nav> 
+
+	<div id="Maindiv">
+        <div class="left">
+            <img src="images/Copy of Gold Luxury Initial Circle Logo (1).png" id="Logo"/>
+        </div>
+     
+<div class="right">
+<div id="changeable1">
+<form id="Form"  method="post"  action="login_page.php" >
+	<fieldset id="Fieldset">
+		<legend id="Legend">
+			LOGIN | SIGN IN
+		</legend>
+		<table id="Table">
+			<tr id="Row">
+				
+		<td id="Data2">
+			
+			<label class="label">
+				<input type="text" name="login_username" required="required" placeholder="Username" id="username" class="all_label"/>
+			</label>
+			<label class="label">
+				<input type="password" name="login_password" required="required" placeholder="Password" id="password"class="all_label"/>
+			</label>
+			<div id="Parentdiv">
+				<div id="Otpdiv">
+					<a href="#" id="Otp">Login Through Mobile Number</a>
+				</div>
+			</div>
+			<div id="Submitdiv">
+				<label>
+					<input type="submit" name="login" value="LOGIN" class="all_label" id="Submit"/>
+				</label>
+
+			</div>
+			<h3 id="incorrect"></h3>
+		</td>
+	</tr>
+		</table>
+	</fieldset>
+</form>
+</div>
+<br>
+<br>
+        <button onclick="changeThisPageFunc()"  style="margin-top: 40px; margin-right: 100px;">Create New Cumfy Account</button>
+	</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  
+<div>
+    <footer>
+        &#169  2023 CUMFY FOOT.
+    </footer>
+</div>
+<div id="changeable2">
+	<form id="Form" method="post" action="signup_page.php">
+		<fieldset id="Fieldset">
+			<legend id="Legend">
+				SIGN UP
+			</legend>
+			<table id="Table">
+				<tr id="Row">
+					
+					<td id="Data2">
+						
+						<label class="label">
+							<input type="text" name="username" required="required" placeholder="Enter Username" class="all_label">
+						</label>
+						<label class="label">
+							<input type="password" name="password" required="required" placeholder="Set Password" class="all_label">
+						</label>
+						<label class="label">
+							<input type="password" name="confirm_password" required="required" placeholder="Confirm Password" class="all_label">
+						</label>
+						<label class="label">
+							<input type="text" name="Email" required="required" placeholder="Enter Gmail" class="all_label">
+						</label>
+						<div id="Submitdiv">
+							<label>
+								<input type="submit" name="signup" class="all_label" id="Submit"> 
+							</label>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</div>
+<script>
+	function changeThisPageFunc(){
+		var elm1 = document.getElementById('changeable1');
+		var elm2 = document.getElementById('changeable2');
+		elm1.innerHTML = elm2.innerHTML;
+	}
+</script>
+</body>
+</html>
